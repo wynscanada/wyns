@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.wyns-nav {
+    background-color: #D5E2D3;
+    border-bottom: 4px solid white;
+}
+
+.wyns-nav .navbar-nav {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Ensure full width to center correctly */
+}
+
+.nav-section {
+    padding-left: 5rem;
+}
+.wyns-nav .navbar-nav.wyns-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.wyns-links {
+    font-family: "Libre Baskerville", serif;
+    color: black;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.wyns-socials {
+    line-height: 0.6;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wyns-socials .nav-link {
+    padding: 0.5em 0;
+}
+
+img {
+    width: 5em;
+}
+
+.logo {
+    font-family: Libre Baskerville;
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    padding-top: 20px;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    border: 1px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: white;
+    font-family: "Montserrat";
+    text-transform: lowercase;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+}
+
+
+.dropdown-item.active {
+    background-color: #FB9ED5; /* Optional: Change text color for active item */
+    color: #53193c;
+}
+
+@media only screen and (max-width: 768px) {
+    .wyns-socials {
+        color: black;
+        font-style: normal;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        float: right;
+        text-align: right;
+    }
+
+    .wyns-links {
+        font-family: "Libre Baskerville", serif;
+        color: black;
+        font-style: normal;
+        font-size: 0.8rem;
+        line-height: 0.3rem;
+        text-transform: uppercase;
+        float: left;
+    }
+
+    .dropdown-menu {
+        left: 50%;
+        transform: translateX(0%);
+    }
+
+    .dropdown-item {
+        color: #333;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        text-align: left;
+        font-family: "Montserrat";
+        text-transform: lowercase;
+        background-color: none;
+    }
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .dropdown-menu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    img {
+        width: 3em;
+    }
+}
+
+#logo-text {
+    font-size: 12px;
+}
